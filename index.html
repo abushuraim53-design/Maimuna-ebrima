@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6d3452">
+  <meta name="description" content="A little page made with care for Maimuna and Ebrima.">
+  <title>Maimuna & Ebrima</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">M <span>&</span> E</a>
+    <nav aria-label="Main navigation">
+      <a href="#letter">A letter</a><a href="#memories">Memories</a><a href="#future">Our future</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">A little page, made with care</p>
+        <h1>Maimuna <em>&</em><br>Ebrima</h1>
+        <p class="lead">Some people leave a mark on our hearts. This page is a gentle way to say that you still matter to me.</p>
+        <a class="primary-btn" href="#letter">Read my letter <span>↗</span></a>
+      </div>
+      <div class="hero-photo">
+        <img id="mainPhoto" src="photo-placeholder.svg" alt="A place for your favourite photo">
+        <label class="photo-upload">Choose a photo<input id="photoInput" type="file" accept="image/*"></label>
+        <span class="photo-note">Your chosen photo stays in this browser.</span>
+      </div>
+      <div class="sun"></div>
+    </section>
+
+    <section class="letter section" id="letter">
+      <div class="section-heading"><p class="eyebrow">From Ebrima</p><h2>A message for you</h2></div>
+      <article class="letter-card">
+        <p>Dear Maimuna,</p>
+        <p>I made this little website because there are things I would like to express sincerely. I still care about you, and I value the good memories we shared.</p>
+        <p>I know that a relationship cannot be rebuilt by words alone. If I hurt you, I am sorry. I am willing to listen, understand how you feel, and take responsibility for my part.</p>
+        <p>I would be happy to have a calm conversation and see whether we could start again, slowly and with more understanding. I don't want to pressure you. Your feelings and your decision matter, and I will respect them.</p>
+        <p class="signoff">With care,<br><strong>Ebrima</strong></p>
+      </article>
+    </section>
+
+    <section class="memories section" id="memories">
+      <div class="section-heading"><p class="eyebrow">Little moments</p><h2>Memories worth keeping</h2><p class="subtext">Add photos or write down moments that mean something to you.</p></div>
+      <div class="memory-tools">
+        <label class="secondary-btn">Add photos<input id="memoryInput" type="file" accept="image/*" multiple></label>
+        <span class="small-note">Saved on this device only.</span>
+      </div>
+      <div class="gallery" id="gallery"><div class="empty-memory">Your memories will appear here when you add photos.</div></div>
+    </section>
+
+    <section class="future section" id="future">
+      <div class="section-heading"><p class="eyebrow">One day at a time</p><h2>Hope for the future</h2><p class="subtext">No promises made on someone else's behalf—just hopes that can be discussed together.</p></div>
+      <div class="future-grid">
+        <div class="future-card"><span>01</span><h3>Listen better</h3><p>Make space for honest conversations, even when they are difficult.</p></div>
+        <div class="future-card"><span>02</span><h3>Grow with patience</h3><p>Build trust through consistent actions, not only beautiful words.</p></div>
+        <div class="future-card"><span>03</span><h3>Respect each other</h3><p>Keep kindness, boundaries, and each person's choice at the centre.</p></div>
+      </div>
+      <div class="countdown-card">
+        <div><p class="eyebrow">A date to remember</p><h3>Our special date</h3><p class="subtext">Set a date that matters to you. The countdown is only a reminder, not a deadline.</p></div>
+        <div class="countdown-control"><input type="date" id="specialDate"><p id="countdown">Choose a date to see the countdown.</p></div>
+      </div>
+    </section>
+
+    <section class="daily section">
+      <div class="daily-card">
+        <p class="eyebrow">A gentle question</p><h2>Today's question</h2>
+        <p id="dailyQuestion">What is one thing that helps you feel genuinely heard?</p>
+        <button class="secondary-btn" id="nextQuestion">Another question</button>
+      </div>
+      <div class="journal-card">
+        <p class="eyebrow">Private to this browser</p><h2>Write a thought</h2>
+        <textarea id="journal" rows="4" placeholder="Write something you want to reflect on..."></textarea>
+        <button class="secondary-btn" id="saveJournal">Save on this device</button>
+        <p class="small-note" id="saveStatus">Your note is stored only in this browser. It is not sent to Maimuna.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>Maimuna <span>♡</span> Ebrima</p><small>Made with sincerity. No pressure, just honesty and respect.</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>
